@@ -28,6 +28,13 @@ class Searchbar extends PureComponent {
       border: "1px solid grey"
     });
   }
+
+  cleartext(event, input) {
+    this.setState({
+      input: ""
+    });
+  }
+
   render() {
     return (
       <div className="Searchbar">
@@ -45,6 +52,10 @@ class Searchbar extends PureComponent {
           />
           <button className="Search-button" type="submit">
             <i className="fa fa-search fa-2x" aria-hidden="true" />
+          </button>
+
+          <button className="Searchclear" onClick={this.cleartext.bind(this)}>
+            <i className="fa fa-times fa-2x" aria-hidden="true" />
           </button>
         </form>
       </div>

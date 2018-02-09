@@ -31,3 +31,10 @@
 i {
   padding-bottom: 1em;
 }
+
+.Searchclear {
+  margin-left: -80px;
+  height: 20px;
+  border: transparent;
+  background: transparent;
+}
