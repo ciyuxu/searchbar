@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import "./Searchbar.css";
 
 class Searchbar extends PureComponent {
   render() {
