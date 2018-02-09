@@ -17,9 +17,15 @@ class Searchbar extends PureComponent {
     });
   }
 
-  onFocus(event) {
+  onFocus() {
     this.setState({
       border: "2px solid grey"
+    });
+  }
+
+  onBlur() {
+    this.setState({
+      border: "1px solid grey"
     });
   }
   render() {
@@ -35,6 +41,7 @@ class Searchbar extends PureComponent {
             onChange={this.updateSearch.bind(this)}
             style={{ border: this.state.border }}
             onFocus={this.onFocus.bind(this)}
+            onBlur={this.onBlur.bind(this)}
           />
           <button className="Search-button" type="submit">
             <i className="fa fa-search fa-2x" aria-hidden="true" />
