@@ -20,7 +20,7 @@ class Searchbar extends PureComponent {
 
   onFocus() {
     this.setState({
-      border: "2px solid grey"
+      border: "3px solid grey"
     });
   }
 

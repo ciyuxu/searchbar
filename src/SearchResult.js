@@ -17,7 +17,7 @@ class SearchResult extends PureComponent {
   }
 
   doSearch() {
-    const url = `.api/?=${encodeURIComponent(this.props.query)}`;
+    const url = `.api/_search?=${encodeURIComponent(this.props.query)}`;
     fetch(url)
       .then(response => {
         return response.json();
