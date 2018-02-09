@@ -54,13 +54,20 @@ class Searchbar extends PureComponent {
             onBlur={this.onBlur.bind(this)}
             ref={input => (this.textInput = input)}
           />
-          <button className="Search-button" type="submit">
+          <button className="Search-button" type="submit" alt="Search button">
             <i className="fa fa-search fa-2x" aria-hidden="true" />
           </button>
 
-          <button className="Searchclear" onClick={this.cleartext.bind(this)}>
-            <i className="fa fa-times fa-2x" aria-hidden="true" />
-          </button>
+          {this.state.input !== "" ? (
+            <button
+              className="Searchclear"
+              onClick={this.cleartext.bind(this)}
+              alt="Clear Search text button"
+            >
+              <i className="fa fa-times fa-2x" aria-hidden="true" />
+            </button>
+          ) : null}
+
           {this.state.input.length > 2 ? (
             <SearchResult query={this.state.input} />
           ) : null}
