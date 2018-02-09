@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import "./Searchbar.css";
+import "../node_modules/font-awesome/css/font-awesome.min.css";
 
 class Searchbar extends PureComponent {
   render() {
@@ -12,7 +13,9 @@ class Searchbar extends PureComponent {
             type="text"
             alt="Type your search here"
           />
-          <button className="Search-button " type="submit" />
+          <button className="Search-button" type="submit">
+            <i className="fa fa-search fa-2x" aria-hidden="true" />
+          </button>
         </form>
       </div>
     );
