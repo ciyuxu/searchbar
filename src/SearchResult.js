@@ -4,7 +4,7 @@ class SearchResult extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      SearchResult: []
+      SearchResults: []
     };
   }
 
@@ -17,9 +17,7 @@ class SearchResult extends PureComponent {
   }
 
   doSearch() {
-    const url = `http://localhost:5000/search?=${encodeURIComponent(
-      this.props.query
-    )}`;
+    const url = `.api/?=${encodeURIComponent(this.props.query)}`;
     fetch(url)
       .then(response => {
         return response.json();
