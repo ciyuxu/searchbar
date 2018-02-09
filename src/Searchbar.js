@@ -30,9 +30,11 @@ class Searchbar extends PureComponent {
   }
 
   cleartext(event, input) {
+    event.preventDefault();
     this.setState({
       input: ""
     });
+    this.textInput.focus();
   }
 
   render() {
@@ -49,6 +51,7 @@ class Searchbar extends PureComponent {
             style={{ border: this.state.border }}
             onFocus={this.onFocus.bind(this)}
             onBlur={this.onBlur.bind(this)}
+            ref={input => (this.textInput = input)}
           />
           <button className="Search-button" type="submit">
             <i className="fa fa-search fa-2x" aria-hidden="true" />
