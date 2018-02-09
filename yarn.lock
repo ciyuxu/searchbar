@@ -1825,6 +1825,13 @@ caniuse-lite@^1.0.30000748, caniuse-lite@^1.0.30000791, caniuse-lite@^1.0.300007
   version "1.0.30000804"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000804.tgz#8729a143d65378e8936adbb161f550e9c49fc09d"
 
+canned@^0.3.10:
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/canned/-/canned-0.3.10.tgz#da022e457d5941423a9e29e7edc368f37ad629ff"
+  dependencies:
+    lodash "^4.17.4"
+    optimist "^0.6.0"
+
 capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"
@@ -5417,7 +5424,7 @@ opn@5.2.0, opn@^5.1.0:
   dependencies:
     is-wsl "^1.1.0"
 
-optimist@^0.6.1:
+optimist@^0.6.0, optimist@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/optimist/-/optimist-0.6.1.tgz#da3ea74686fa21a19a111c326e90eb15a0196686"
   dependencies:

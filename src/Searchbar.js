@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import "./Searchbar.css";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
+import SearchResult from "./SearchResult";
 
 class Searchbar extends PureComponent {
   constructor(prop) {
@@ -60,6 +61,9 @@ class Searchbar extends PureComponent {
           <button className="Searchclear" onClick={this.cleartext.bind(this)}>
             <i className="fa fa-times fa-2x" aria-hidden="true" />
           </button>
+          {this.state.input.length > 2 ? (
+            <SearchResult query={this.state.input} />
+          ) : null}
         </form>
       </div>
     );
