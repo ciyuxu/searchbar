@@ -37,8 +37,10 @@ class SearchResult extends PureComponent {
   render() {
     return (
       <div className="searchResult">
-        <h2>Result:{this.state.searchResults} </h2>
-        <h2>{this.state.error}</h2>
+        <li>
+          <h2>Result:{this.state.searchResults} </h2>
+          <h2>{this.state.error}</h2>
+        </li>
       </div>
     );
   }
